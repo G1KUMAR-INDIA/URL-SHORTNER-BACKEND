@@ -45,7 +45,7 @@ app.post("/api/url/shorten", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-app.get('/',(req,res)=>res.send("Hello World")
+app.get('/',(req,res)=>res.send("URL Shortner")
 )
 
 app.get("/api/url/:code", async (req, res) => {
